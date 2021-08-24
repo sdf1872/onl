@@ -1,0 +1,17 @@
+<style>
+*{outline:none;border:none;}
+input{background-color:whitesmoke;}
+</style>
+
+<script>
+function urlChange(proxy,url) {
+    var site = proxy+url;
+    document.getElementById('frame').src = site;
+}
+function f() {
+	urlChange("",document.getElementById('textbox').value);
+}
+</script>
+<!--<input type="textbox" id="proxy" style="width:45%;" placeholder="proxy"/>--> <input placeholder="site" type="textbox" id="textbox" style="width:45%;"/> <button type="button" onclick="f()"> go </button>
+<br/>
+<iframe id="frame" style="width:100%;height:100%;"> </iframe>
